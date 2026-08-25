@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | TeachCore Educator Registration</title>
+  <meta name="description" content="Register for a TeachCore account to join an elite global network of university educators, professors, researchers, and academic leaders.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body style="background: radial-gradient(circle at 50% 30%, rgba(201, 162, 74, 0.08) 0%, transparent 70%), var(--bg-black); display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 3rem 1rem;">
+
+  <!-- STANDALONE AUTH CONTAINER (NO HEADER, NO FOOTER, NO MAIN NAV) -->
+  <main style="width: 100%; max-width: 520px;">
+    <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold-strong); padding: 3rem 2.5rem; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(201, 162, 74, 0.15); position: relative;">
+      
+      <!-- BRAND LOGO -->
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <a href="index.html" class="brand-logo" style="justify-content: center; margin-bottom: 0.5rem;">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+          </div>
+          <span class="brand-text">Teach<span class="core">Core</span></span>
+        </a>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Join The Global Educator Network</p>
+      </div>
+
+      <h1 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Create Educator Account</h1>
+
+      <!-- SIGNUP FORM -->
+      <form id="signup-form">
+        <div class="form-group">
+          <label class="form-label" for="full-name">Full Name (With Credentials)</label>
+          <input type="text" id="full-name" class="form-control" required placeholder="Dr. Elizabeth Vance">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Institutional Email</label>
+          <input type="email" id="email" class="form-control" required placeholder="e.vance@university.edu">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="role">Professional Academic Role</label>
+          <select id="role" class="form-control" required style="padding: 0.9rem 1.25rem;">
+            <option value="" disabled selected>Select Your Professional Role...</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Professor">Professor</option>
+            <option value="Mentor">Mentor</option>
+            <option value="Trainer">Trainer</option>
+            <option value="Academic Leader">Academic Leader</option>
+            <option value="Researcher">Researcher</option>
+            <option value="Other">Other Educator Role</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <div style="position: relative;">
+            <input type="password" id="password" class="form-control" required placeholder="Create a secure password">
+            <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="confirm-password">Confirm Password</label>
+          <div style="position: relative;">
+            <input type="password" id="confirm-password" class="form-control" required placeholder="Confirm password">
+            <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; margin-bottom: 1.5rem;">Create Account &rarr;</button>
+
+        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary);">
+          Already have an educator account? <a href="login.html" style="color: var(--gold-bright); font-weight: 600;">Login</a>
+        </p>
+
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+          <a href="index.html" style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">&larr; Return to TeachCore Homepage</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

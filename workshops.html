@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops & Events | TeachCore Academic Seminars</title>
+  <meta name="description" content="Attend live executive masterclasses, faculty development seminars, and interactive teaching workshops led by world-class education researchers.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TeachCore Home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+        </div>
+        <span class="brand-text">Teach<span class="core">Core</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="programs.html" class="nav-link">Programs</a></li>
+          <li><a href="workshops.html" class="nav-link active">Workshops</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="programs.html#mentorship" class="nav-link">Mentorship</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <span class="search-shortcut">⌘K</span>
+        </button>
+        <div class="auth-state-container">
+          <a href="login.html" class="nav-auth-link">Login</a>
+          <a href="signup.html" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.8rem;">Join TeachCore</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+      <li><a href="workshops.html" class="mobile-nav-link active">Workshops & Events</a></li>
+      <li><a href="resources.html" class="mobile-nav-link">Resources Library</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About TeachCore</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="login.html" class="btn btn-secondary" style="width: 100%;">Educator Login</a>
+      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Create Account</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="section-padding" style="background: radial-gradient(circle at 80% 20%, rgba(201, 162, 74, 0.08) 0%, transparent 60%), var(--bg-black); border-bottom: 1px solid var(--border-gold); padding-top: 5rem; padding-bottom: 4rem;">
+      <div class="container">
+        <span class="section-tag">Live Executive Seminars</span>
+        <h1 style="margin-bottom: 1rem;">Workshops & Academic Events</h1>
+        <p style="font-size: 1.2rem; max-width: 750px; color: var(--text-secondary);">
+          Interactive virtual and on-site masterclasses led by distinguished education scholars, cognitive scientists, and university leaders.
+        </p>
+      </div>
+    </section>
+
+    <!-- EVENT TABS CONTROL -->
+    <section style="background: var(--bg-black-soft); border-bottom: 1px solid var(--border-gold); padding: 1.5rem 0;">
+      <div class="container">
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button type="button" class="btn btn-primary" data-event-tab="upcoming">Upcoming Events</button>
+          <button type="button" class="btn btn-secondary" data-event-tab="this-month">This Month</button>
+          <button type="button" class="btn btn-secondary" data-event-tab="past">Past Recordings</button>
+          <button type="button" class="btn btn-secondary" data-event-tab="all">All Events</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSHOPS CONTAINER -->
+    <section class="section-padding" style="background: var(--bg-black);">
+      <div class="container">
+        <div id="workshops-container" style="display: flex; flex-direction: column; gap: 2rem;">
+          <!-- Dynamically rendered by js/workshops.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+            </div>
+            <span class="brand-text">Teach<span class="core">Core</span></span>
+          </a>
+          <p>The premier professional development platform for higher education faculty, researchers, and academic leaders.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html">Teaching Practice</a></li>
+            <li><a href="programs.html">Academic Leadership</a></li>
+            <li><a href="programs.html">Digital Pedagogy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="workshops.html">Live Workshops</a></li>
+            <li><a href="resources.html">Resources Library</a></li>
+            <li><a href="about.html">About TeachCore</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Institutional</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Philosophy</a></li>
+            <li><a href="about.html">Expert Council</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 TeachCore Development Platform. All rights reserved.</span>
+        <span>Executive Education &bull; Sharp Editorial Standard</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/workshops.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs | TeachCore Educator Development</title>
+  <meta name="description" content="Explore executive professional development programs, certifications, and masterclasses designed for university faculty, researchers, and academic leaders.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TeachCore Home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+        </div>
+        <span class="brand-text">Teach<span class="core">Core</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="programs.html" class="nav-link active">Programs</a></li>
+          <li><a href="workshops.html" class="nav-link">Workshops</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="programs.html#mentorship" class="nav-link">Mentorship</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <span class="search-shortcut">⌘K</span>
+        </button>
+        <div class="auth-state-container">
+          <a href="login.html" class="nav-auth-link">Login</a>
+          <a href="signup.html" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.8rem;">Join TeachCore</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="programs.html" class="mobile-nav-link active">Programs</a></li>
+      <li><a href="workshops.html" class="mobile-nav-link">Workshops & Events</a></li>
+      <li><a href="resources.html" class="mobile-nav-link">Resources Library</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About TeachCore</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="login.html" class="btn btn-secondary" style="width: 100%;">Educator Login</a>
+      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Create Account</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="section-padding" style="background: radial-gradient(circle at 80% 20%, rgba(201, 162, 74, 0.08) 0%, transparent 60%), var(--bg-black); border-bottom: 1px solid var(--border-gold); padding-top: 5rem; padding-bottom: 4rem;">
+      <div class="container">
+        <span class="section-tag">Executive Curriculum</span>
+        <h1 style="margin-bottom: 1rem;">Professional Development Programs</h1>
+        <p style="font-size: 1.2rem; max-width: 750px; color: var(--text-secondary);">
+          Rigorous, peer-reviewed executive programs built specifically for university educators, department chairs, and research fellows.
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR & SEARCH -->
+    <section style="background: var(--bg-black-soft); border-bottom: 1px solid var(--border-gold); padding: 1.75rem 0;">
+      <div class="container">
+        <div class="filter-bar" style="display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+          
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; flex-grow: 1;">
+            <div style="min-width: 180px;">
+              <select id="filter-category" class="form-control" style="padding: 0.65rem 1rem; font-size: 0.85rem;">
+                <option value="all">All Categories</option>
+                <option value="Teaching Practice">Teaching Practice</option>
+                <option value="Faculty Development">Faculty Development</option>
+                <option value="Academic Leadership">Academic Leadership</option>
+                <option value="Digital Education">Digital Education</option>
+                <option value="Research">Research</option>
+                <option value="Assessment">Assessment</option>
+              </select>
+            </div>
+
+            <div style="min-width: 150px;">
+              <select id="filter-level" class="form-control" style="padding: 0.65rem 1rem; font-size: 0.85rem;">
+                <option value="all">All Levels</option>
+                <option value="Foundational">Foundational</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Executive">Executive</option>
+              </select>
+            </div>
+
+            <div style="min-width: 150px;">
+              <select id="filter-format" class="form-control" style="padding: 0.65rem 1rem; font-size: 0.85rem;">
+                <option value="all">All Formats</option>
+                <option value="Online">Online</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="On-Site">On-Site</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="min-width: 260px;">
+            <input type="text" id="filter-search" class="form-control" placeholder="Search program keyword..." style="padding: 0.65rem 1rem; font-size: 0.85rem;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM GRID CONTAINER -->
+    <section class="section-padding" style="background: var(--bg-black);">
+      <div class="container">
+        <div id="programs-grid" class="grid grid-3">
+          <!-- Dynamic Content rendered by js/programs.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MENTORSHIP & FACULTY COACHING BANNER -->
+    <section id="mentorship" class="section-padding" style="background: var(--bg-black-soft); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+      <div class="container grid grid-2" style="align-items: center; gap: 4rem;">
+        <div>
+          <span class="section-tag">Direct Faculty Mentorship</span>
+          <h2 style="margin-bottom: 1.25rem;">One-on-One Academic Coaching</h2>
+          <p style="font-size: 1.05rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+            Pair directly with distinguished university provosts and published research fellows for confidential 1-on-1 strategic guidance on tenure pathways, department management, and research publication strategies.
+          </p>
+          <button type="button" class="btn btn-primary" onclick="if(window.showToast) window.showToast('Mentorship application form opened.', 'info'); openProgramModal('p6');">Apply for Mentorship &rarr;</button>
+        </div>
+
+        <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.5rem; position: relative;">
+          <h3 style="font-size: 1.5rem; color: var(--gold-bright); margin-bottom: 1rem;">Mentorship Outcomes</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+            <li style="display: flex; gap: 0.75rem;"><span style="color: var(--gold);">&#9670;</span> Personalized Tenure & Promotion Dossier Review</li>
+            <li style="display: flex; gap: 0.75rem;"><span style="color: var(--gold);">&#9670;</span> Confidential Department Leadership Advisory</li>
+            <li style="display: flex; gap: 0.75rem;"><span style="color: var(--gold);">&#9670;</span> Grant & High-Impact Journal Manuscript Audit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+            </div>
+            <span class="brand-text">Teach<span class="core">Core</span></span>
+          </a>
+          <p>The premier professional development platform for higher education faculty, researchers, and academic leaders.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html">Teaching Practice</a></li>
+            <li><a href="programs.html">Academic Leadership</a></li>
+            <li><a href="programs.html">Digital Pedagogy</a></li>
+            <li><a href="programs.html">Research & Publishing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="workshops.html">Live Workshops</a></li>
+            <li><a href="resources.html">Resources Library</a></li>
+            <li><a href="about.html">About TeachCore</a></li>
+            <li><a href="login.html">Educator Portal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Institutional</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Philosophy</a></li>
+            <li><a href="about.html">Expert Council</a></li>
+            <li><a href="signup.html">Join Network</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 TeachCore Development Platform. All rights reserved.</span>
+        <span>Executive Education &bull; Sharp Editorial Standard</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/programs.js"></script>
+</body>
+</html>
