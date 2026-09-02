@@ -83,9 +83,9 @@ function initWorkshopsPage() {
     }
 
     container.innerHTML = filtered.map(evt => `
-      <div class="editorial-card" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center;">
+      <div class="editorial-card workshop-card">
         <div>
-          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+          <div class="workshop-card-header">
             <span class="badge badge-gold">${evt.category}</span>
             <span style="font-size: 0.85rem; color: var(--gold); font-weight: 600;">${evt.date} &bull; ${evt.time}</span>
           </div>
@@ -95,13 +95,13 @@ function initWorkshopsPage() {
             <strong>Featured Keynote:</strong> ${evt.speaker} (${evt.speakerRole})
           </div>
         </div>
-        <div style="border-left: 1px solid var(--border-gold); padding-left: 2rem; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 1rem;">
+        <div class="workshop-card-action">
           ${evt.seatsLeft > 0 ? `
             <span style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600;">Only ${evt.seatsLeft} Executive Seats Remaining</span>
-            <button type="button" class="btn btn-primary reserve-seat-btn" data-title="${escapeHTML(evt.title)}" style="width: 100%;">Reserve Your Seat &rarr;</button>
+            <button type="button" class="btn btn-primary reserve-seat-btn" data-title="${escapeHTML(evt.title)}" style="width: 100%;">Reserve Your Seat</button>
           ` : `
             <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Registration Closed / Recorded</span>
-            <button type="button" class="btn btn-outline" style="width: 100%; opacity: 0.7;" onclick="if(window.showToast) window.showToast('Accessing archived lecture recording...', 'info');">View On-Demand &rarr;</button>
+            <button type="button" class="btn btn-outline" style="width: 100%; opacity: 0.7;" onclick="if(window.showToast) window.showToast('Accessing archived lecture recording...', 'info');">View On-Demand</button>
           `}
         </div>
       </div>

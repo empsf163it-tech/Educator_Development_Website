@@ -130,7 +130,7 @@ function initProgramsPage() {
         </div>
         <div>
           <p style="font-size: 0.85rem; color: var(--gold-bright); margin-bottom: 1.25rem;"><strong>Lead Instructor:</strong> ${prog.instructor}</p>
-          <button type="button" class="btn btn-outline view-program-detail" data-id="${prog.id}" style="width: 100%;">View Curriculum & Detail &rarr;</button>
+          <button type="button" class="btn btn-outline view-program-detail" data-id="${prog.id}" style="width: 100%;">View Curriculum & Detail</button>
         </div>
       </div>
     `).join('');

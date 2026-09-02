@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TeachCore | Executive Professional Development for Educators</title>
-  <meta name="description" content="TeachCore is the premier professional development platform for teachers, professors, researchers, and academic leaders shaping the future of higher education.">
+  <meta name="description"
+    content="TeachCore is the premier professional development platform for teachers, professors, researchers, and academic leaders shaping the future of higher education.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- SITE HEADER / NAVIGATION -->
@@ -15,30 +19,37 @@
     <div class="container nav-container">
       <a href="index.html" class="brand-logo" aria-label="TeachCore Home">
         <div class="logo-mark">
-          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <path d="M12 6v6"></path>
+            <path d="M9 9h6"></path>
+          </svg>
         </div>
         <span class="brand-text">Teach<span class="core">Core</span></span>
       </a>
 
       <nav class="desktop-nav" aria-label="Main Navigation">
         <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="programs.html" class="nav-link">Programs</a></li>
           <li><a href="workshops.html" class="nav-link">Workshops</a></li>
           <li><a href="resources.html" class="nav-link">Resources</a></li>
-          <li><a href="programs.html#mentorship" class="nav-link">Mentorship</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <button class="search-trigger" aria-label="Search site">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
           <span>Search</span>
-          <span class="search-shortcut">⌘K</span>
         </button>
         <div class="auth-state-container">
-          <a href="login.html" class="nav-auth-link">Login</a>
-          <a href="programs.html" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.8rem;">Explore Programs</a>
+          <a href="login.html" class="btn btn-outline nav-auth-link" style="height: 38px; padding: 0 1.25rem; font-size: 0.8rem;">Login</a>
+          <a href="contact.html" class="nav-contact-btn">Contact Us</a>
         </div>
         <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="hamburger-line line-1"></span>
@@ -52,63 +63,83 @@
   <!-- MOBILE NAVIGATION DRAWER -->
   <div class="mobile-nav-overlay" aria-hidden="true">
     <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
       <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
-      <li><a href="workshops.html" class="mobile-nav-link">Workshops & Events</a></li>
-      <li><a href="resources.html" class="mobile-nav-link">Resources Library</a></li>
-      <li><a href="about.html" class="mobile-nav-link">About TeachCore</a></li>
+      <li><a href="workshops.html" class="mobile-nav-link">Workshops</a></li>
+      <li><a href="resources.html" class="mobile-nav-link">Resources</a></li>
     </ul>
     <div class="mobile-nav-actions">
       <a href="login.html" class="btn btn-secondary" style="width: 100%;">Educator Login</a>
-      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Create Account</a>
+      <a href="contact.html" class="nav-contact-btn" style="width: 100%;">Contact Us</a>
     </div>
   </div>
 
   <main>
     <!-- SECTION 1: CINEMATIC HERO -->
-    <section class="hero-section" style="background: radial-gradient(circle at 70% 30%, rgba(201, 162, 74, 0.08) 0%, transparent 60%), var(--bg-black); padding: 7rem 0 6rem 0; border-bottom: 1px solid var(--border-gold); position: relative; overflow: hidden;">
-      <div class="container hero-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center;">
+    <section class="hero-section"
+      style="background: radial-gradient(circle at 70% 30%, rgba(201, 162, 74, 0.08) 0%, transparent 60%), var(--bg-black); padding: 7rem 0 6rem 0; border-bottom: 1px solid var(--border-gold); position: relative; overflow: hidden;">
+      <div class="container hero-grid"
+        style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center;">
         <div>
           <span class="section-tag">Executive Education Platform</span>
           <h1 style="margin-bottom: 1.5rem; line-height: 1.1;">
             Teach With Purpose.<br>
             <span class="text-gold-gradient">Grow With Knowledge.</span>
           </h1>
-          <p style="font-size: 1.25rem; max-width: 600px; margin-bottom: 2.5rem; color: var(--text-secondary); font-weight: 300;">
-            Professional development for educators, professors, and academic leaders shaping the future of higher learning and research.
+          <p
+            style="font-size: 1.25rem; max-width: 600px; margin-bottom: 2.5rem; color: var(--text-secondary); font-weight: 300;">
+            Professional development for educators, professors, and academic leaders shaping the future of higher
+            learning and research.
           </p>
           <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
-            <a href="programs.html" class="btn btn-primary">Explore Programs &rarr;</a>
+            <a href="programs.html" class="btn btn-primary">Explore Programs</a>
             <a href="about.html" class="btn btn-secondary">Discover TeachCore</a>
           </div>
-          
-          <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); display: flex; gap: 3rem;">
+
+          <div
+            style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); display: flex; gap: 3rem;">
             <div>
-              <span style="display: block; font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--gold);">98.4%</span>
-              <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Faculty Impact Rating</span>
+              <span
+                style="display: block; font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--gold);">98.4%</span>
+              <span
+                style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Faculty
+                Impact Rating</span>
             </div>
             <div>
-              <span style="display: block; font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--gold);">180+</span>
-              <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Senior Research Fellows</span>
+              <span
+                style="display: block; font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--gold);">180+</span>
+              <span
+                style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Senior
+                Research Fellows</span>
             </div>
           </div>
         </div>
 
         <!-- HERO VISUAL: EDITORIAL ACADEMIC IMAGE WITH GOLD OVERLAY -->
         <div style="position: relative;">
-          <div style="border: 1px solid var(--border-gold); padding: 1.25rem; background: var(--bg-graphite); position: relative;">
-            <div style="width: 100%; height: 440px; background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat; filter: grayscale(40%) contrast(110%); border: 1px solid rgba(201, 162, 74, 0.4); position: relative;">
-              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 10, 8, 0.2) 0%, rgba(11, 10, 8, 0.85) 100%);"></div>
+          <div
+            style="border: 1px solid var(--border-gold); padding: 1.25rem; background: var(--bg-graphite); position: relative;">
+            <div
+              style="width: 100%; height: 440px; background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat; filter: grayscale(40%) contrast(110%); border: 1px solid rgba(201, 162, 74, 0.4); position: relative;">
+              <div
+                style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 10, 8, 0.2) 0%, rgba(11, 10, 8, 0.85) 100%);">
+              </div>
               <div style="position: absolute; bottom: 2rem; left: 2rem; right: 2rem;">
                 <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Academic Excellence</span>
-                <h4 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.25rem;">The Architecture of Modern Pedagogy</h4>
+                <h4 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.25rem;">The Architecture of
+                  Modern Pedagogy</h4>
                 <p style="font-size: 0.85rem; color: var(--text-secondary);">Faculty Development Series 2026</p>
               </div>
             </div>
           </div>
           <!-- Decorative Gold Corner Element -->
-          <div style="position: absolute; top: -12px; right: -12px; width: 40px; height: 40px; border-top: 2px solid var(--gold-bright); border-right: 2px solid var(--gold-bright); pointer-events: none;"></div>
-          <div style="position: absolute; bottom: -12px; left: -12px; width: 40px; height: 40px; border-bottom: 2px solid var(--gold-bright); border-left: 2px solid var(--gold-bright); pointer-events: none;"></div>
+          <div
+            style="position: absolute; top: -12px; right: -12px; width: 40px; height: 40px; border-top: 2px solid var(--gold-bright); border-right: 2px solid var(--gold-bright); pointer-events: none;">
+          </div>
+          <div
+            style="position: absolute; bottom: -12px; left: -12px; width: 40px; height: 40px; border-bottom: 2px solid var(--gold-bright); border-left: 2px solid var(--gold-bright); pointer-events: none;">
+          </div>
         </div>
       </div>
     </section>
@@ -116,12 +147,13 @@
     <!-- SECTION 2: FEATURED PROGRAMS -->
     <section class="section-padding" style="background: var(--bg-black-soft);">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
           <div>
             <span class="section-tag">Curated Curriculum</span>
             <h2>Programs Built for Educators.</h2>
           </div>
-          <a href="programs.html" class="btn btn-outline">View All Programs &rarr;</a>
+          <a href="programs.html" class="btn btn-outline">View All Programs</a>
         </div>
 
         <div class="grid grid-3">
@@ -134,9 +166,10 @@
               <div class="card-meta">
                 <span>8 Weeks</span> &bull; <span>Advanced</span> &bull; <span>Hybrid</span>
               </div>
-              <p class="card-desc">Evidence-based instructional strategies, active learning architectures, and cognitive retention frameworks.</p>
+              <p class="card-desc">Evidence-based instructional strategies, active learning architectures, and cognitive
+                retention frameworks.</p>
             </div>
-            <a href="programs.html" class="card-footer-link">Explore Program <span>&rarr;</span></a>
+            <a href="programs.html" class="card-footer-link">Explore Program </a>
           </div>
 
           <!-- Card 2 -->
@@ -148,9 +181,10 @@
               <div class="card-meta">
                 <span>12 Weeks</span> &bull; <span>Executive</span> &bull; <span>Online</span>
               </div>
-              <p class="card-desc">Strategic departmental leadership, faculty mentoring models, institutional policy, and grant oversight.</p>
+              <p class="card-desc">Strategic departmental leadership, faculty mentoring models, institutional policy,
+                and grant oversight.</p>
             </div>
-            <a href="programs.html" class="card-footer-link">Explore Program <span>&rarr;</span></a>
+            <a href="programs.html" class="card-footer-link">Explore Program </a>
           </div>
 
           <!-- Card 3 -->
@@ -162,9 +196,10 @@
               <div class="card-meta">
                 <span>6 Weeks</span> &bull; <span>Foundational</span> &bull; <span>Online</span>
               </div>
-              <p class="card-desc">Designing engaging digital course structures, asynchronous lecture modules, and interactive assessments.</p>
+              <p class="card-desc">Designing engaging digital course structures, asynchronous lecture modules, and
+                interactive assessments.</p>
             </div>
-            <a href="programs.html" class="card-footer-link">Explore Program <span>&rarr;</span></a>
+            <a href="programs.html" class="card-footer-link">Explore Program </a>
           </div>
 
           <!-- Card 4 -->
@@ -176,9 +211,10 @@
               <div class="card-meta">
                 <span>10 Weeks</span> &bull; <span>Advanced</span> &bull; <span>Hybrid</span>
               </div>
-              <p class="card-desc">Navigating high-impact academic peer reviews, grant proposal writing, and interdisciplinary collaboration.</p>
+              <p class="card-desc">Navigating high-impact academic peer reviews, grant proposal writing, and
+                interdisciplinary collaboration.</p>
             </div>
-            <a href="programs.html" class="card-footer-link">Explore Program <span>&rarr;</span></a>
+            <a href="programs.html" class="card-footer-link">Explore Program </a>
           </div>
 
           <!-- Card 5 -->
@@ -190,9 +226,10 @@
               <div class="card-meta">
                 <span>4 Weeks</span> &bull; <span>Foundational</span> &bull; <span>Online</span>
               </div>
-              <p class="card-desc">Constructing unbiased rubrics, diagnostic testing frameworks, and actionable student feedback loops.</p>
+              <p class="card-desc">Constructing unbiased rubrics, diagnostic testing frameworks, and actionable student
+                feedback loops.</p>
             </div>
-            <a href="programs.html" class="card-footer-link">Explore Program <span>&rarr;</span></a>
+            <a href="programs.html" class="card-footer-link">Explore Program </a>
           </div>
 
           <!-- Card 6 -->
@@ -204,46 +241,65 @@
               <div class="card-meta">
                 <span>8 Weeks</span> &bull; <span>Executive</span> &bull; <span>On-Site</span>
               </div>
-              <p class="card-desc">Structured peer coaching, classroom observation methodology, and department culture development.</p>
+              <p class="card-desc">Structured peer coaching, classroom observation methodology, and department culture
+                development.</p>
             </div>
-            <a href="programs.html" class="card-footer-link">Explore Program <span>&rarr;</span></a>
+            <a href="programs.html" class="card-footer-link">Explore Program </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 3: PROFESSIONAL GROWTH TIMELINE -->
-    <section class="section-padding" style="background: var(--bg-black); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+    <section class="section-padding"
+      style="background: var(--bg-black); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
       <div class="container">
         <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem auto;">
           <span class="section-tag" style="justify-content: center;">Methodology</span>
           <h2>The Educator Development Pathway</h2>
-          <p>A structured progression framework designed to transform academic experience into institutional leadership.</p>
+          <p>A structured progression framework designed to transform academic experience into institutional leadership.
+          </p>
         </div>
 
         <div class="grid grid-4" style="position: relative;">
-          <div class="timeline-step" style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
-            <div style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">01</div>
+          <div class="timeline-step"
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
+            <div
+              style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">
+              01</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gold-bright);">LEARN</h3>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">Engage with empirical research, modern pedagogy, and cognitive science fundamentals taught by senior fellows.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Engage with empirical research, modern pedagogy,
+              and cognitive science fundamentals taught by senior fellows.</p>
           </div>
 
-          <div class="timeline-step" style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
-            <div style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">02</div>
+          <div class="timeline-step"
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
+            <div
+              style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">
+              02</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gold-bright);">PRACTICE</h3>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">Implement peer-reviewed teaching frameworks directly inside your live university classrooms and seminars.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Implement peer-reviewed teaching frameworks
+              directly inside your live university classrooms and seminars.</p>
           </div>
 
-          <div class="timeline-step" style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
-            <div style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">03</div>
+          <div class="timeline-step"
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
+            <div
+              style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">
+              03</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gold-bright);">CERTIFY</h3>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">Earn rigorous digital credentials and verified institutional certifications recognized by academic boards worldwide.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Earn rigorous digital credentials and verified
+              institutional certifications recognized by academic boards worldwide.</p>
           </div>
 
-          <div class="timeline-step" style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
-            <div style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">04</div>
+          <div class="timeline-step"
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem; position: relative;">
+            <div
+              style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 1rem;">
+              04</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gold-bright);">LEAD</h3>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">Guide department committees, mentor junior faculty members, and champion institutional learning innovation.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Guide department committees, mentor junior
+              faculty members, and champion institutional learning innovation.</p>
           </div>
         </div>
       </div>
@@ -252,27 +308,32 @@
     <!-- SECTION 4: FEATURED WORKSHOP -->
     <section class="section-padding" style="background: var(--bg-black-soft);">
       <div class="container">
-        <div class="asymmetric-layout" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; background: var(--bg-graphite); border: 1px solid var(--border-gold-strong); padding: 3.5rem;">
+        <div class="asymmetric-layout"
+          style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; background: var(--bg-graphite); border: 1px solid var(--border-gold-strong); padding: 3.5rem;">
           <div>
             <span class="badge badge-gold" style="margin-bottom: 1.25rem;">Live Faculty Workshop</span>
             <h2 style="font-size: 2.75rem; margin-bottom: 1rem;">MASTERING MODERN PEDAGOGY</h2>
-            <div style="display: flex; gap: 1.5rem; color: var(--gold-bright); font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;">
+            <div class="workshop-featured-meta">
               <span>📅 September 18, 2026</span>
               <span>⏰ 6:00 PM EST</span>
               <span>📍 Live Virtual Executive Suite</span>
             </div>
             <p style="font-size: 1.05rem; margin-bottom: 2rem; color: var(--text-secondary);">
-              An interactive 2-hour executive masterclass unpacking cognitive load theory, attention retention, and active learning strategies for higher education.
+              An interactive 2-hour executive masterclass unpacking cognitive load theory, attention retention, and
+              active learning strategies for higher education.
             </p>
             <div style="padding-left: 1.5rem; border-left: 2px solid var(--gold); margin-bottom: 2.5rem;">
               <h4 style="font-size: 1.1rem; color: var(--text-primary);">Dr. Elena Martin</h4>
-              <p style="font-size: 0.85rem; color: var(--gold-bright);">Senior Fellow in Cognitive Science & Education Research</p>
+              <p style="font-size: 0.85rem; color: var(--gold-bright);">Senior Fellow in Cognitive Science & Education
+                Research</p>
             </div>
-            <a href="workshops.html" class="btn btn-primary">Reserve Your Seat &rarr;</a>
+            <a href="workshops.html" class="btn btn-primary">Reserve Your Seat</a>
           </div>
 
           <div style="position: relative;">
-            <div style="width: 100%; height: 380px; background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; border: 1px solid var(--border-gold); filter: grayscale(30%);"></div>
+            <div
+              style="width: 100%; height: 380px; background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; border: 1px solid var(--border-gold); filter: grayscale(30%);">
+            </div>
           </div>
         </div>
       </div>
@@ -287,33 +348,50 @@
         </div>
 
         <div class="grid grid-3">
-          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
-            <div style="width: 100%; height: 260px; background: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; filter: grayscale(50%); border: 1px solid var(--border-subtle);"></div>
+          <div
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div
+              style="width: 100%; height: 260px; background: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; filter: grayscale(50%); border: 1px solid var(--border-subtle);">
+            </div>
             <div>
               <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.25rem;">Dr. Aris Thorne</h3>
-              <p style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.75rem;">Professor of Computer Science & Pedagogical Research</p>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Oxford Institute of Technology</p>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);">"TeachCore’s research publication framework allowed our faculty to double peer-reviewed journal output within 12 months."</p>
+              <p style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.75rem;">
+                Professor of Computer Science & Pedagogical Research</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Oxford Institute of
+                Technology</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">"TeachCore’s research publication framework
+                allowed our faculty to double peer-reviewed journal output within 12 months."</p>
             </div>
           </div>
 
-          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
-            <div style="width: 100%; height: 260px; background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; filter: grayscale(50%); border: 1px solid var(--border-subtle);"></div>
+          <div
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div
+              style="width: 100%; height: 260px; background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; filter: grayscale(50%); border: 1px solid var(--border-subtle);">
+            </div>
             <div>
               <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.25rem;">Prof. Marcus Vance</h3>
-              <p style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.75rem;">Dean of Academic Innovation</p>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Cambridge Faculty of Education</p>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);">"The executive leadership program provided the governance tools needed to restructure our department for hybrid learning."</p>
+              <p style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.75rem;">Dean
+                of Academic Innovation</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Cambridge Faculty of
+                Education</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">"The executive leadership program provided the
+                governance tools needed to restructure our department for hybrid learning."</p>
             </div>
           </div>
 
-          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
-            <div style="width: 100%; height: 260px; background: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; filter: grayscale(50%); border: 1px solid var(--border-subtle);"></div>
+          <div
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div
+              style="width: 100%; height: 260px; background: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; filter: grayscale(50%); border: 1px solid var(--border-subtle);">
+            </div>
             <div>
               <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.25rem;">Dr. Clara Sterling</h3>
-              <p style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.75rem;">Senior Lecturer & Curriculum Developer</p>
+              <p style="font-size: 0.85rem; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.75rem;">Senior
+                Lecturer & Curriculum Developer</p>
               <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Columbia Academic Center</p>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);">"The diagnostic rubric design workshop fundamentally changed how our university measures genuine student mastery."</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">"The diagnostic rubric design workshop
+                fundamentally changed how our university measures genuine student mastery."</p>
             </div>
           </div>
         </div>
@@ -321,13 +399,15 @@
     </section>
 
     <!-- SECTION 6: CERTIFICATION SECTION PREVIEW -->
-    <section class="section-padding" style="background: var(--bg-black-soft); border-top: 1px solid var(--border-gold);">
+    <section class="section-padding"
+      style="background: var(--bg-black-soft); border-top: 1px solid var(--border-gold);">
       <div class="container grid grid-2" style="align-items: center; gap: 4rem;">
         <div>
           <span class="section-tag">Institutional Credentialing</span>
           <h2 style="margin-bottom: 1.25rem;">Earn Recognition for Your Expertise.</h2>
           <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-            TeachCore certifications demonstrate verified mastery in modern instructional architecture, academic leadership, and research protocols.
+            TeachCore certifications demonstrate verified mastery in modern instructional architecture, academic
+            leadership, and research protocols.
           </p>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
             <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
@@ -340,19 +420,29 @@
               <span style="color: var(--gold);">&#9670;</span> Continuing Education Units (CEU) Credit
             </li>
           </ul>
-          <a href="programs.html" class="btn btn-primary">Explore Certified Programs &rarr;</a>
+          <a href="programs.html" class="btn btn-primary">Explore Certified Programs</a>
         </div>
 
         <!-- CERTIFICATE PREVIEW CARD -->
-        <div class="cert-preview-card" style="background: var(--bg-graphite); border: 2px solid var(--border-gold-strong); padding: 3rem; position: relative; text-align: center;">
+        <div class="cert-preview-card"
+          style="background: var(--bg-graphite); border: 2px solid var(--border-gold-strong); padding: 3rem; position: relative; text-align: center;">
           <div style="border: 1px solid rgba(201, 162, 74, 0.3); padding: 2rem;">
-            <div style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700; color: var(--gold); margin-bottom: 0.5rem;">TeachCore</div>
-            <div style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1.5rem;">Professional Development Certificate</div>
-            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">This is to certify that</p>
+            <div
+              style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700; color: var(--gold); margin-bottom: 0.5rem;">
+              TeachCore</div>
+            <div
+              style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Professional Development Certificate</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">This is to certify that
+            </p>
             <h3 style="font-size: 1.85rem; color: var(--text-primary); margin-bottom: 0.5rem;">Dr. Elizabeth Vance</h3>
-            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">has completed the advanced executive curriculum in</p>
-            <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 600; color: var(--gold-bright); margin-bottom: 2rem;">Advanced Pedagogy & Instructional Architecture</div>
-            <div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.75rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">has completed the
+              advanced executive curriculum in</p>
+            <div
+              style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 600; color: var(--gold-bright); margin-bottom: 2rem;">
+              Advanced Pedagogy & Instructional Architecture</div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.75rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
               <span>Issued: 2026</span>
               <span style="font-family: var(--font-serif); color: var(--gold);">TeachCore Academic Council</span>
               <span>ID: TC-884920</span>
@@ -365,54 +455,68 @@
     <!-- SECTION 7: RESOURCES PREVIEW -->
     <section class="section-padding" style="background: var(--bg-black);">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
           <div>
             <span class="section-tag">Scholarly Repository</span>
             <h2>Classroom Resources & Research</h2>
           </div>
-          <a href="resources.html" class="btn btn-outline">Explore Full Library &rarr;</a>
+          <a href="resources.html" class="btn btn-outline">Explore Full Library</a>
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div>
               <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Teaching Guide</span>
-              <h4 style="font-size: 1.35rem; color: var(--text-primary);">The Modern Classroom Pedagogy Framework (2026 Edition)</h4>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);">An empirical guide to cognitive retention and active learning design.</p>
+              <h4 style="font-size: 1.35rem; color: var(--text-primary);">The Modern Classroom Pedagogy Framework (2026
+                Edition)</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">An empirical guide to cognitive retention and
+                active learning design.</p>
             </div>
-            <a href="resources.html" class="btn btn-secondary" style="font-size: 0.8rem;">Download PDF &rarr;</a>
+            <a href="resources.html" class="btn btn-secondary" style="font-size: 0.8rem;">Download PDF</a>
           </div>
 
-          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div>
               <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Research Paper</span>
-              <h4 style="font-size: 1.35rem; color: var(--text-primary);">Generative AI Policy & Ethics Guidelines for Higher Education</h4>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);">Institutional frameworks for managing AI integrity in undergraduate courses.</p>
+              <h4 style="font-size: 1.35rem; color: var(--text-primary);">Generative AI Policy & Ethics Guidelines for
+                Higher Education</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Institutional frameworks for managing AI
+                integrity in undergraduate courses.</p>
             </div>
-            <a href="resources.html" class="btn btn-secondary" style="font-size: 0.8rem;">Download PDF &rarr;</a>
+            <a href="resources.html" class="btn btn-secondary" style="font-size: 0.8rem;">Download PDF</a>
           </div>
 
-          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div
+            style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div>
               <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Assessment Tool</span>
-              <h4 style="font-size: 1.35rem; color: var(--text-primary);">Unbiased Diagnostic Rubric Engineering Toolkit</h4>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);">Standardized rubric models for humanities and STEM evaluation.</p>
+              <h4 style="font-size: 1.35rem; color: var(--text-primary);">Unbiased Diagnostic Rubric Engineering Toolkit
+              </h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Standardized rubric models for humanities and
+                STEM evaluation.</p>
             </div>
-            <a href="resources.html" class="btn btn-secondary" style="font-size: 0.8rem;">Download PDF &rarr;</a>
+            <a href="resources.html" class="btn btn-secondary" style="font-size: 0.8rem;">Download PDF</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 8: LARGE EDITORIAL TESTIMONIAL -->
-    <section class="section-padding" style="background: var(--bg-black-soft); border-top: 1px solid var(--border-gold); text-align: center;">
+    <section class="section-padding"
+      style="background: var(--bg-black-soft); border-top: 1px solid var(--border-gold); text-align: center;">
       <div class="container" style="max-width: 960px;">
-        <span style="font-family: var(--font-serif); font-size: 4rem; color: var(--gold); line-height: 1; display: block; margin-bottom: 1rem;">“</span>
-        <blockquote style="font-family: var(--font-serif); font-size: clamp(1.8rem, 3.5vw, 2.75rem); font-style: italic; color: var(--text-primary); line-height: 1.3; margin-bottom: 2rem;">
+        <span
+          style="font-family: var(--font-serif); font-size: 4rem; color: var(--gold); line-height: 1; display: block; margin-bottom: 1rem;">“</span>
+        <blockquote
+          style="font-family: var(--font-serif); font-size: clamp(1.8rem, 3.5vw, 2.75rem); font-style: italic; color: var(--text-primary); line-height: 1.3; margin-bottom: 2rem;">
           Great teaching is not about having all the answers.<br>
           It is about continuing to learn.
         </blockquote>
-        <div style="font-family: var(--font-sans); font-size: 1rem; font-weight: 700; color: var(--gold-bright); letter-spacing: 0.05em; text-transform: uppercase;">
+        <div
+          style="font-family: var(--font-sans); font-size: 1rem; font-weight: 700; color: var(--gold-bright); letter-spacing: 0.05em; text-transform: uppercase;">
           Professor Julian Thorne
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">
@@ -422,38 +526,57 @@
     </section>
 
     <!-- SECTION 9: CREDIBILITY STATISTICS -->
-    <section class="section-padding" style="background: var(--bg-graphite); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+    <section class="section-padding"
+      style="background: var(--bg-graphite); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
       <div class="container">
         <div class="grid grid-4" style="text-align: center;">
           <div>
-            <div class="stat-number" style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">12,000+</div>
-            <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">Educators Trained</div>
+            <div class="stat-number"
+              style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">
+              12,000+</div>
+            <div
+              style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+              Educators Trained</div>
           </div>
           <div>
-            <div class="stat-number" style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">420+</div>
-            <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">Executive Programs</div>
+            <div class="stat-number"
+              style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">
+              420+</div>
+            <div
+              style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+              Executive Programs</div>
           </div>
           <div>
-            <div class="stat-number" style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">180+</div>
-            <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">Senior Experts</div>
+            <div class="stat-number"
+              style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">
+              180+</div>
+            <div
+              style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+              Senior Experts</div>
           </div>
           <div>
-            <div class="stat-number" style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">38</div>
-            <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">Countries Represented</div>
+            <div class="stat-number"
+              style="font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.5rem;">
+              38</div>
+            <div
+              style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+              Countries Represented</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 10: FINAL CINEMATIC CTA -->
-    <section class="section-padding" style="background: radial-gradient(circle at 50% 50%, rgba(201, 162, 74, 0.1) 0%, transparent 70%), var(--bg-black); text-align: center;">
+    <section class="section-padding"
+      style="background: radial-gradient(circle at 50% 50%, rgba(201, 162, 74, 0.1) 0%, transparent 70%), var(--bg-black); text-align: center;">
       <div class="container" style="max-width: 800px;">
         <h2 style="font-size: 3.5rem; margin-bottom: 1rem;">Keep Learning. Keep Leading.</h2>
         <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: var(--text-secondary);">
-          Your expertise shapes the next generation of thinkers, researchers, and leaders. Keep building it with TeachCore.
+          Your expertise shapes the next generation of thinkers, researchers, and leaders. Keep building it with
+          TeachCore.
         </p>
         <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-          <a href="programs.html" class="btn btn-primary">Explore Programs &rarr;</a>
+          <a href="programs.html" class="btn btn-primary">Explore Programs</a>
           <a href="signup.html" class="btn btn-secondary">Join TeachCore Platform</a>
         </div>
       </div>
@@ -467,11 +590,17 @@
         <div class="footer-brand">
           <a href="index.html" class="brand-logo">
             <div class="logo-mark">
-              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M12 6v6"></path><path d="M9 9h6"></path></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <path d="M12 6v6"></path>
+                <path d="M9 9h6"></path>
+              </svg>
             </div>
             <span class="brand-text">Teach<span class="core">Core</span></span>
           </a>
-          <p>The premier professional development platform for higher education faculty, researchers, and academic leaders.</p>
+          <p>The premier professional development platform for higher education faculty, researchers, and academic
+            leaders.</p>
         </div>
 
         <div>
@@ -491,6 +620,7 @@
             <li><a href="workshops.html">Live Workshops</a></li>
             <li><a href="resources.html">Resources Library</a></li>
             <li><a href="about.html">About TeachCore</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
             <li><a href="login.html">Educator Portal</a></li>
           </ul>
         </div>
@@ -517,4 +647,5 @@
   <script src="js/auth.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

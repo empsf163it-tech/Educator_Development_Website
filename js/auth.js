@@ -52,8 +52,8 @@ function initAuthUI() {
   } else {
     // If on normal page (has header)
     authContainer.innerHTML = `
-      <a href="login.html" class="nav-auth-link">Login</a>
-      <a href="signup.html" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.8rem;">Join TeachCore</a>
+      <a href="login.html" class="btn btn-outline nav-auth-link" style="height: 38px; padding: 0 1.25rem; font-size: 0.8rem;">Login</a>
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
     `;
   }
 
@@ -64,6 +64,10 @@ function initAuthUI() {
 
   if (!navActions.contains(authContainer)) {
     navActions.appendChild(authContainer);
+  }
+
+  if (typeof window.highlightActiveLink === 'function') {
+    window.highlightActiveLink();
   }
 }
 
@@ -108,8 +112,15 @@ function initAuthForms() {
       const confirmPassword = signupForm.querySelector('#confirm-password').value.trim();
       const role = signupForm.querySelector('#role').value;
 
+      const termsAgree = signupForm.querySelector('#terms-agree');
+
       if (!fullName || !email || !password || !role) {
         if (window.showToast) window.showToast('Please fill out all required fields.', 'error');
+        return;
+      }
+
+      if (termsAgree && !termsAgree.checked) {
+        if (window.showToast) window.showToast('You must agree to the Terms & Conditions to register.', 'error');
         return;
       }
 

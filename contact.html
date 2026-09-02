@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact TeachCore | Executive Support & Institutional Inquiries</title>
+  <meta name="description"
+    content="Get in touch with TeachCore executive admissions, institutional partnership coordinators, and faculty development specialists.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TeachCore Home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <path d="M12 6v6"></path>
+            <path d="M9 9h6"></path>
+          </svg>
+        </div>
+        <span class="brand-text">Teach<span class="core">Core</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="programs.html" class="nav-link">Programs</a></li>
+          <li><a href="workshops.html" class="nav-link">Workshops</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+        </button>
+        <div class="auth-state-container">
+          <a href="login.html" class="btn btn-outline nav-auth-link" style="height: 38px; padding: 0 1.25rem; font-size: 0.8rem;">Login</a>
+          <a href="contact.html" class="nav-contact-btn active">Contact Us</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+      <li><a href="workshops.html" class="mobile-nav-link">Workshops</a></li>
+      <li><a href="resources.html" class="mobile-nav-link">Resources</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="login.html" class="btn btn-secondary" style="width: 100%;">Educator Login</a>
+      <a href="contact.html" class="nav-contact-btn active" style="width: 100%;">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section"
+      style="background: radial-gradient(circle at 70% 30%, rgba(201, 162, 74, 0.08) 0%, transparent 60%), var(--bg-black); padding: 6rem 0 4.5rem 0; border-bottom: 1px solid var(--border-gold); position: relative;">
+      <div class="container text-center" style="max-width: 800px; margin: 0 auto;">
+        <span class="section-tag">Institutional Contact & Inquiries</span>
+        <h1 style="margin-bottom: 1.25rem; font-size: 2.75rem; line-height: 1.15;">
+          Connect With Our <br><span class="text-gold-gradient">Academic Executive Team</span>
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); font-weight: 300; margin-bottom: 0;">
+          Whether you are exploring institutional partnerships, faculty cohort enrollments, or research collaborations, our team responds to all formal inquiries within 24 business hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN CONTACT GRID SECTION -->
+    <section class="section-padding" style="background: var(--bg-black);">
+      <div class="container">
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: start;">
+          
+          <!-- LEFT COLUMN: CONTACT FORM -->
+          <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.75rem 2.25rem; position: relative;">
+            <h2 style="font-size: 1.5rem; color: var(--gold-bright); margin-bottom: 0.5rem;">Send an Inquiry</h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">
+              Fill out the form below to reach our dedicated institutional advisor.
+            </p>
+
+            <form id="contact-inquiry-form" onsubmit="event.preventDefault(); if(window.showToast) window.showToast('Thank you! Your inquiry has been sent to our executive team.', 'success'); this.reset();">
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contact-name" style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 0.4rem; font-weight: 600;">Full Name *</label>
+                <input type="text" id="contact-name" required placeholder="Dr. Evelyn Vance" style="width: 100%; background: var(--bg-black); border: 1px solid var(--border-gold); color: var(--text-primary); padding: 0.75rem 1rem; font-family: var(--font-sans); font-size: 0.9rem;">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contact-email" style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 0.4rem; font-weight: 600;">Work / Institutional Email *</label>
+                <input type="email" id="contact-email" required placeholder="evance@cambridge.edu" style="width: 100%; background: var(--bg-black); border: 1px solid var(--border-gold); color: var(--text-primary); padding: 0.75rem 1rem; font-family: var(--font-sans); font-size: 0.9rem;">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contact-institution" style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 0.4rem; font-weight: 600;">Institution & Role</label>
+                <input type="text" id="contact-institution" placeholder="University of Cambridge — Dean of Faculty" style="width: 100%; background: var(--bg-black); border: 1px solid var(--border-gold); color: var(--text-primary); padding: 0.75rem 1rem; font-family: var(--font-sans); font-size: 0.9rem;">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contact-subject" style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 0.4rem; font-weight: 600;">Inquiry Topic *</label>
+                <select id="contact-subject" required style="width: 100%; background: var(--bg-black); border: 1px solid var(--border-gold); color: var(--text-primary); padding: 0.75rem 1rem; font-family: var(--font-sans); font-size: 0.9rem;">
+                  <option value="partnership">Institutional & University Partnerships</option>
+                  <option value="enrollment">Faculty Cohort Development Programs</option>
+                  <option value="research">Research Publishing & Peer Review Support</option>
+                  <option value="press">Press, Media & Academic Keynotes</option>
+                  <option value="general">General Advisory Question</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.75rem;">
+                <label for="contact-message" style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 0.4rem; font-weight: 600;">Message / Proposal Details *</label>
+                <textarea id="contact-message" required rows="5" placeholder="Please describe your institution's professional development requirements or specific inquiry..." style="width: 100%; background: var(--bg-black); border: 1px solid var(--border-gold); color: var(--text-primary); padding: 0.75rem 1rem; font-family: var(--font-sans); font-size: 0.9rem; resize: vertical;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; height: 44px;">
+                Submit Formal Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- RIGHT COLUMN: DIRECT CHANNELS & GLOBAL HQS -->
+          <div style="display: flex; flex-direction: column; gap: 2rem;">
+            
+            <!-- DIRECT CHANNELS CARD -->
+            <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem;">
+              <h3 style="font-size: 1.25rem; color: var(--gold-bright); margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: 0.05em;">Direct Academic Channels</h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <div style="display: flex; gap: 1rem; align-items: start;">
+                  <div style="width: 40px; height: 40px; border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--text-primary);">Executive Admissions</strong>
+                    <a href="mailto:admissions@teachcore.edu" style="font-size: 0.85rem; color: var(--gold); text-decoration: none;">admissions@teachcore.edu</a>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; align-items: start;">
+                  <div style="width: 40px; height: 40px; border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--text-primary);">Institutional Partnerships</strong>
+                    <a href="mailto:partnerships@teachcore.edu" style="font-size: 0.85rem; color: var(--gold); text-decoration: none;">partnerships@teachcore.edu</a>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; align-items: start;">
+                  <div style="width: 40px; height: 40px; border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--text-primary);">Response Timeframe</strong>
+                    <span style="font-size: 0.85rem; color: var(--text-secondary);">24 Business Hours Guaranteed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GLOBAL ACADEMIC LOCATIONS -->
+            <div style="background: var(--bg-graphite); border: 1px solid var(--border-gold); padding: 2.25rem;">
+              <h3 style="font-size: 1.25rem; color: var(--gold-bright); margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: 0.05em;">Global Academic Hubs</h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 1.25rem; font-size: 0.85rem; color: var(--text-secondary);">
+                <div>
+                  <strong style="color: var(--text-primary); display: block; font-size: 0.9rem; margin-bottom: 0.2rem;">Boston Academic HQ</strong>
+                  100 Innovation Way, Cambridge, MA 02142, USA
+                </div>
+                <div style="border-top: 1px dashed var(--border-gold-light); padding-top: 1rem;">
+                  <strong style="color: var(--text-primary); display: block; font-size: 0.9rem; margin-bottom: 0.2rem;">London Research Centre</strong>
+                  45 Russell Square, Bloomsbury, London WC1B 4JP, UK
+                </div>
+                <div style="border-top: 1px dashed var(--border-gold-light); padding-top: 1rem;">
+                  <strong style="color: var(--text-primary); display: block; font-size: 0.9rem; margin-bottom: 0.2rem;">Asia-Pacific Hub</strong>
+                  1 College Link, NUS University Town, Singapore 138607
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <path d="M12 6v6"></path>
+                <path d="M9 9h6"></path>
+              </svg>
+            </div>
+            <span class="brand-text">Teach<span class="core">Core</span></span>
+          </a>
+          <p>The premier professional development platform for higher education faculty, researchers, and academic
+            leaders.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="programs.html">Teaching Practice</a></li>
+            <li><a href="programs.html">Academic Leadership</a></li>
+            <li><a href="programs.html">Digital Pedagogy</a></li>
+            <li><a href="programs.html">Research & Publishing</a></li>
+            <li><a href="programs.html">Assessment Design</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="workshops.html">Live Workshops</a></li>
+            <li><a href="resources.html">Resources Library</a></li>
+            <li><a href="about.html">About TeachCore</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+            <li><a href="login.html">Educator Portal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Institutional</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Philosophy</a></li>
+            <li><a href="about.html">Expert Council</a></li>
+            <li><a href="about.html">Research Impact</a></li>
+            <li><a href="signup.html">Join Network</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 TeachCore Development Platform. All rights reserved.</span>
+        <span>Executive Education &bull; Sharp Editorial Standard</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

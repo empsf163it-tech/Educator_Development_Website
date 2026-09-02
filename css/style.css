@@ -458,12 +458,19 @@ select.form-control {
   background: transparent;
   border: 1px solid var(--border-gold);
   color: var(--text-secondary);
-  padding: 0.55rem 1rem;
-  display: flex;
+  height: 38px;
+  padding: 0 1rem;
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 0.85rem;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
+  box-sizing: border-box;
   transition: all var(--transition-fast);
 }
 
@@ -473,24 +480,92 @@ select.form-control {
   background: var(--bg-graphite);
 }
 
-.search-shortcut {
-  font-size: 0.7rem;
-  background: var(--bg-graphite-light);
-  border: 1px solid var(--border-gold);
-  padding: 0.15rem 0.4rem;
-  color: var(--gold);
-}
-
 .nav-auth-link {
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 1.25rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-primary);
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  border: 1px solid var(--border-gold);
+  background: transparent;
+  box-sizing: border-box;
+  transition: all var(--transition-normal);
+  cursor: pointer;
 }
 
-.nav-auth-link:hover {
+.nav-actions .btn {
+  height: 38px;
+  box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--gold);
+  border: 1px solid var(--border-gold);
+  background: transparent;
+  box-sizing: border-box;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-contact-btn:hover {
+  background: rgba(201, 162, 74, 0.15);
+  border-color: var(--gold-bright);
+  color: var(--gold-bright);
+  transform: translateY(-2px);
+}
+
+@keyframes contactGlowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(201, 162, 74, 0.6), 0 0 2px rgba(255, 240, 194, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 26px rgba(201, 162, 74, 1), 0 0 16px rgba(255, 255, 255, 0.9), 0 0 35px rgba(201, 162, 74, 0.7);
+    border-color: #FFFFFF;
+    transform: scale(1.04);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(201, 162, 74, 0.6), 0 0 2px rgba(255, 240, 194, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1);
+  }
+}
+
+/* ACTIVE Contact Us Button (ON CONTACT PAGE ONLY) */
+.auth-state-container a[href="contact.html"].active,
+.mobile-nav-actions a[href="contact.html"].active,
+.nav-contact-btn.active {
+  background: linear-gradient(135deg, #FFF0C2 0%, #E3BE68 50%, #C9A24A 100%) !important;
+  color: #0A0B0D !important;
+  border-color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.09em !important;
+  position: relative !important;
+  animation: contactGlowPulse 1.8s infinite ease-in-out !important;
+  text-decoration: none !important;
+}
+
+.auth-state-container a[href="contact.html"].active::after {
+  display: none !important;
 }
 
 .user-badge {
@@ -860,4 +935,51 @@ select.form-control {
   justify-content: space-between;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* ==========================================================================
+   WORKSHOP RESPONSIVE LAYOUT CLASSES
+   ========================================================================== */
+.workshop-featured-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.75rem;
+  color: var(--gold-bright);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.workshop-featured-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.workshop-card {
+  display: grid;
+  grid-template-columns: 2fr 1.1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.workshop-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.workshop-card-action {
+  border-left: 1px solid var(--border-gold);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
 }

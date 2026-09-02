@@ -107,7 +107,7 @@ function initResourcesPage() {
             <strong>Author:</strong> ${res.author}
           </div>
           <div style="display: flex; gap: 0.75rem;">
-            <button type="button" class="btn btn-outline preview-resource-btn" data-title="${escapeHTML(res.title)}" data-desc="${escapeHTML(res.desc)}" style="flex: 1; padding: 0.6rem; font-size: 0.75rem;">Preview &rarr;</button>
+            <button type="button" class="btn btn-outline preview-resource-btn" data-title="${escapeHTML(res.title)}" data-desc="${escapeHTML(res.desc)}" style="flex: 1; padding: 0.6rem; font-size: 0.75rem;">Preview</button>
             <button type="button" class="btn btn-primary download-resource-btn" data-title="${escapeHTML(res.title)}" style="padding: 0.6rem 1rem; font-size: 0.75rem;">Download PDF</button>
           </div>
         </div>

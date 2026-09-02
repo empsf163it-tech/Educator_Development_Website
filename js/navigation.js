@@ -57,7 +57,7 @@ function initNavigation() {
 
 function highlightActiveLink() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+  const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .auth-state-container a, .mobile-nav-actions a');
 
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
@@ -70,3 +70,5 @@ function highlightActiveLink() {
     }
   });
 }
+
+window.highlightActiveLink = highlightActiveLink;

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D89A" />
+      <stop offset="50%" stop-color="#C9A24A" />
+      <stop offset="100%" stop-color="#9A7B31" />
+    </linearGradient>
+  </defs>
+  <!-- Dark Graphite Rounded Background -->
+  <rect width="64" height="64" rx="14" fill="#121418" stroke="url(#goldGrad)" stroke-width="2.5" />
+  
+  <!-- TeachCore Emblem -->
+  <g transform="translate(12, 12) scale(1.6667)" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+    <path d="M12 6v6" />
+    <path d="M9 9h6" />
+  </g>
+</svg>

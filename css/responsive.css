@@ -25,8 +25,8 @@
   .site-header {
     height: 76px;
   }
-  .nav-menu, .nav-actions .search-trigger, .nav-actions .btn-outline {
-    display: none;
+  .nav-menu, .nav-actions .search-trigger, .nav-actions .auth-state-container {
+    display: none !important;
   }
   .hamburger-btn {
     display: flex;
@@ -94,6 +94,32 @@
   .cert-preview-card {
     padding: 1.5rem !important;
   }
+  .asymmetric-layout {
+    padding: 2rem 1.25rem !important;
+    gap: 2rem !important;
+  }
+  .workshop-featured-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.9rem;
+  }
+  .workshop-card {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  .workshop-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .workshop-card-action {
+    border-left: none !important;
+    border-top: 1px solid var(--border-gold);
+    padding-left: 0 !important;
+    padding-top: 1.25rem;
+    width: 100%;
+  }
 }
 
 /* Small Mobile Screens (320px - 390px) */
@@ -108,5 +134,8 @@
   .btn {
     padding: 0.85rem 1.25rem;
     font-size: 0.8rem;
+  }
+  .workshop-featured-meta {
+    font-size: 0.85rem;
   }
 }

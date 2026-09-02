@@ -415,28 +415,37 @@ select.form-control {
   background: transparent;
   border: 1px solid var(--border-gold);
   color: var(--text-secondary);
-  padding: 0.55rem 1rem;
-  display: flex;
+  height: 38px;
+  padding: 0 1rem;
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 0.85rem;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
-}
-
-.search-shortcut {
-  font-size: 0.7rem;
-  background: var(--bg-graphite-light);
-  border: 1px solid var(--border-gold);
-  padding: 0.15rem 0.4rem;
-  color: var(--gold);
+  box-sizing: border-box;
 }
 
 .nav-auth-link {
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 1.25rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-primary);
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  border: 1px solid var(--border-gold);
+  background: transparent;
+  box-sizing: border-box;
+  transition: all var(--transition-normal);
+  cursor: pointer;
 }
 
 .user-badge {
